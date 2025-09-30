@@ -1,4 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
+  // Typed.js animated text
+  var typed = new Typed("#typed", {
+    strings: [
+      "Stay focused and organized!",
+      "Achieve your study goals.",
+      "Never miss a study session.",
+      "Plan. Notify. Succeed."
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    startDelay: 800,
+    loop: true,
+    backDelay: 1500
+  });
   const form = document.getElementById("taskForm");
   const list = document.getElementById("taskList");
 
@@ -80,3 +94,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
   
+
